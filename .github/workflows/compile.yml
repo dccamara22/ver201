@@ -16,8 +16,6 @@ jobs:
   prepare:
     name: Determine variants to build
     runs-on: ubuntu-latest
-    outputs:
-      variants: ${{ steps.select.outputs.variants }}
     steps:
       - name: Checkout
         uses: actions/checkout@v3

@@ -8,12 +8,12 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v4        # Actualizado a v4 para quitar el aviso de Node
+        uses: actions/checkout@v4
         with:
           submodules: 'recursive'
 
       - name: Compilar Firmware
         uses: espressif/esp-idf-ci-action@v1
         with:
-          esp_idf_version: v4.4.7      # Versión más específica y estable
+          esp_idf_version: v5.4    # Cambiado a v5.4 para cumplir el requisito
           target: esp32
